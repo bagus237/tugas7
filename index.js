@@ -1,10 +1,10 @@
-var name = "";
-var money = 850000;
-var age = 18;
+var name = "Bagus";
+var money = 750000;
+var age = 23;
 
 
 
-if (name == 0 ){
+if (name == 0 ){0
  console.log("Anda Tidak Boleh Memesan");
 }
 
@@ -17,8 +17,8 @@ else if (age > 17 ){
  console.log("Uang tidak cukup anda harus pulang");
 }
 } 
-//dibawah 17
-else if(age < 17 ){
+//dibawah atau 17
+else if(age <= 17 ){
   console.log("Anda hanya bisa pesan juice");
   if (money >= 50000 ){
   console.log("Anda bisa pesan minum. Sisa uang anda:", money - 50000);
