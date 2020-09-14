@@ -1,4 +1,4 @@
-var name = "Bagus";
+var name = "";
 var money = 850000;
 var age = 18;
 
@@ -6,11 +6,10 @@ var age = 18;
 
 if (name == 0 ){
  console.log("Anda Tidak Boleh Memesan");
-  throw new Error('Program Berhenti');
 }
 
 //di atas 17
-if (age > 17 ){
+else if (age > 17 ){
   console.log("Anda hanya bisa pesan anggur");
   if (money >= 300000 ){
   console.log("Anda bisa pesan minum. Sisa uang anda:", money - 300000);
@@ -19,7 +18,7 @@ if (age > 17 ){
 }
 } 
 //dibawah 17
-if (age < 17 ){
+else if(age < 17 ){
   console.log("Anda hanya bisa pesan juice");
   if (money >= 50000 ){
   console.log("Anda bisa pesan minum. Sisa uang anda:", money - 50000);
